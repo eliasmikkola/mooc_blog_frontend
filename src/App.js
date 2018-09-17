@@ -1,5 +1,7 @@
 import React from 'react'
-import Blog from './components/Blog'
+import Blog from './components/blogs/Blog'
+import BlogForm from './components/blogs/BlogForm'
+
 import User from './components/User'
 import blogService from './services/blogs'
 import loginService from './services/login'
@@ -8,6 +10,7 @@ import userService from './services/users'
 class App extends React.Component {
   constructor(props) {
     super(props)
+    this.postBlog = this.postBlog.bind(this);
     this.state = {
       blogs: [],
       username: '',
@@ -22,7 +25,6 @@ class App extends React.Component {
     )
     try {
       const loggedUserJSON = window.localStorage.getItem('loggedUser')
-      console.log(JSON.parse(loggedUserJSON))
       if (loggedUserJSON) {
         const user = JSON.parse(loggedUserJSON)
         this.setState({user})
@@ -34,7 +36,6 @@ class App extends React.Component {
     }
   } 
   onFieldChange = (event) => {
-    console.log(event.target.value)
     this.setState({
       [event.target.name]: event.target.value
     })
@@ -54,7 +55,7 @@ class App extends React.Component {
         this.setState({
           user: this.state.username
         })
-        userService.getAll() .then((userResult) => {
+        userService.getAll().then((userResult) => {
             const user = userResult.find(n => n.username === username)
             user['token'] = token
             this.setState({
@@ -76,6 +77,18 @@ class App extends React.Component {
     this.setState({
       user: null
     })
+  }
+
+  postBlog = (data) => {
+    console.log("IN APP.js postblog", data);
+    blogService.create(data).then((result) => {
+      console.log(result)
+      this.setState(prevState => ({
+        blogs: [...prevState.blogs, result]
+      }))
+    }).catch((err) => {
+      console.log("ERRR");
+    });
   }
   
 
@@ -114,11 +127,12 @@ class App extends React.Component {
             key='logout' 
             onClick={this.logout}>LOGOUT
           </button>
-
         </div>
+        <BlogForm postBlog={this.postBlog}/>
           {this.state.blogs.map(blog =>
             <Blog key={blog.id} blog={blog} />
           )}
+        
       </div>
     )
   }
