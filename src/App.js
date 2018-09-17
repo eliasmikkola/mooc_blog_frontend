@@ -20,6 +20,18 @@ class App extends React.Component {
     blogService.getAll().then(blogs =>
       this.setState({ blogs })
     )
+    try {
+      const loggedUserJSON = window.localStorage.getItem('loggedUser')
+      console.log(JSON.parse(loggedUserJSON))
+      if (loggedUserJSON) {
+        const user = JSON.parse(loggedUserJSON)
+        this.setState({user})
+        blogService.setToken(user.token)
+      }
+
+    } catch(e){
+      console.log(e);
+    }
   } 
   onFieldChange = (event) => {
     console.log(event.target.value)
@@ -38,21 +50,32 @@ class App extends React.Component {
     }
     loginService.login(data) 
       .then((result) => {
+        const token = result.token
         this.setState({
           user: this.state.username
         })
         userService.getAll() .then((userResult) => {
             const user = userResult.find(n => n.username === username)
+            user['token'] = token
             this.setState({
-              user: user ? user : null
+              user: user ? user : null,
+              username: '',
+              password: ''
             })
+            window.localStorage.setItem('loggedUser', JSON.stringify(user))
         }).catch((err) => {
           
         });
-        blogService.setToken(result.token)
+        blogService.setToken(token)
       }).catch((err) => {
         
       })
+  }
+  logout = () => {
+    window.localStorage.removeItem('loggedUser')
+    this.setState({
+      user: null
+    })
   }
   
 
@@ -61,7 +84,7 @@ class App extends React.Component {
       return (
         <div>
           <h2>Kirjaudu sovellukseen</h2>
-          <form>
+          <form onSubmit={this.login}>
             <label >Username</label>
             <input
               key="username"
@@ -77,7 +100,7 @@ class App extends React.Component {
               type="password"
             />
           </form>
-          <button onClick={this.login}></button>
+          <button onClick={this.login}>Login</button>
         </div>
       )
     }
@@ -85,10 +108,17 @@ class App extends React.Component {
     return (
       <div>
         <h2>blogs</h2>
-        <User user={this.state.user}/>
-        {this.state.blogs.map(blog =>
-          <Blog key={blog._id} blog={blog} />
-        )}
+        <div key='userdiv'>
+          <User user={this.state.user}/>
+          <button 
+            key='logout' 
+            onClick={this.logout}>LOGOUT
+          </button>
+
+        </div>
+          {this.state.blogs.map(blog =>
+            <Blog key={blog.id} blog={blog} />
+          )}
       </div>
     )
   }
