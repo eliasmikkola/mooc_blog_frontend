@@ -1,6 +1,7 @@
+import Promise from 'bluebird'
 let token = null
 
-const notes = [
+const blogs = [
   {
     id: "5a451df7571c224a31b5c8ce",
     title: "HTML on helppoa",
@@ -9,8 +10,8 @@ const notes = [
     likes: 15,
     user: {
       _id: "5a437a9e514ab7f168ddf138",
-      username: "mluukkai",
-      name: "Matti Luukkainen"
+      username: "demodemo",
+      name: "Demottelija"
     }
   },
   {
@@ -21,8 +22,8 @@ const notes = [
     likes: 57,
     user: {
       _id: "5a437a9e514ab7f168ddf138",
-      username: "mluukkai",
-      name: "Matti Luukkainen"
+      username: "demodemo",
+      name: "Demottelija"
     }
   },
   {
@@ -33,14 +34,17 @@ const notes = [
     likes: 12,
     user: {
       _id: "5a437a9e514ab7f168ddf138",
-      username: "mluukkai",
-      name: "Matti Luukkainen"
+      username: "demodemo",
+      name: "Demottelija"
     }
   }
 ]
 
 const getAll = () => {
-  return Promise.resolve(notes)
+  return Promise.resolve(blogs)
+}
+const setToken = (token) => {
+  return token = token
 }
 
-export default { getAll, notes }
+export default { getAll, blogs, setToken }

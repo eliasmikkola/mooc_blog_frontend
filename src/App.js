@@ -24,21 +24,23 @@ class App extends React.Component {
     }
   }
 
-  componentDidMount() {
-    blogService.getAll().then(blogs =>
-      this.setState({ blogs })
-    )
-    try {
+  componentWillMount() {
+    blogService.getAll().then(blogs => {
+      console.log("BLOGS");
+      
       const loggedUserJSON = window.localStorage.getItem('loggedUser')
       if (loggedUserJSON) {
+        console.log("INSIDE")
         const user = JSON.parse(loggedUserJSON)
-        this.setState({user})
+        this.setState({
+          user:user,
+          blogs:blogs})
         blogService.setToken(user.token)
       }
+      
+    }).catch (e => {
 
-    } catch(e){
-      console.log(e);
-    }
+    })
   } 
   onFieldChange = (event) => {
     this.setState({
@@ -46,7 +48,6 @@ class App extends React.Component {
     })
   }
   login = () => {
-    console.log(this.state);
     const username = this.state.username
     const password = this.state.password
     
@@ -56,6 +57,7 @@ class App extends React.Component {
     }
     loginService.login(data) 
       .then((result) => {
+        console.log(result);
         const token = result.token
         this.setState({
           user: result
@@ -113,7 +115,6 @@ class App extends React.Component {
     }
 
     blogService.update(data.id, updatedBlog).then((result) => {
-      console.log("resukt",result,  this.state.blogs.map(n => n.id === result.id ? result : n));
       //set blogs
       this.setState(prevState => ({
         blogs: prevState.blogs.map(n => n.id === result.id ? result : n),
@@ -156,7 +157,7 @@ class App extends React.Component {
 
 
   render() {
-  
+    console.log("IN RENDER", this.state);
     return (
       
       <div>
@@ -168,7 +169,7 @@ class App extends React.Component {
              (  <div>
 
                 <h2>Kirjaudu sovellukseen</h2>
-                <form onSubmit={this.login}>
+                <form className="loginForm" onSubmit={this.login}>
                   <label >Username</label>
                   <input style={this.inputStyle}
                     key="username"

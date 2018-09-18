@@ -4,6 +4,7 @@ const baseUrl = '/api/blogs'
 let token = null
 
 const getAll = () => {
+  console.log("HERE??");
   const request = axios.get(baseUrl)
   return request.then(response => response.data)
 }
