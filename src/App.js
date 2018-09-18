@@ -111,11 +111,11 @@ class App extends React.Component {
   }
   
   inputStyle = {
-    'border-radius': '6px',
-    'height': '20px',
-    'padding': '5px',
-    'margin-bottom': '10px',
-    'margin-left': '5px'
+    borderRadius: 6,
+    height: 20,
+    padding: 5,
+    marginBottom: 10,
+    marginLeft: 5
 
   }
 
@@ -163,7 +163,7 @@ class App extends React.Component {
             </div>
             <BlogForm postBlog={this.postBlog} inputStyle={this.inputStyle}/>
               <div style={{
-                  'margin-top': '30px'
+                  marginTop: 30
               }}>
                 {this.state.blogs.map(blog =>
                   <Blog key={blog.id} blog={blog}  />
