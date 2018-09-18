@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class Blog extends React.Component {
   constructor(props) {
@@ -7,9 +8,7 @@ class Blog extends React.Component {
       extended: false
     }
   }
-  componentDidMount = () =>  {
-    console.log(this.props.user, this.props.blog);
-  }
+ 
   toggleExtended = () => {
     this.setState({extended: !this.state.extended})
   }
@@ -52,6 +51,13 @@ render () {
       </div> 
     )
   }
+}
+
+Blog.propTypes = {
+  blog: PropTypes.object.isRequired,
+  user: PropTypes.object.isRequired,
+  likeBlog: PropTypes.func.isRequired,
+  deleteBlog: PropTypes.func.isRequired
 }
 
 export default Blog

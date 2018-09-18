@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 class BlogForm extends React.Component {
     constructor(props) {
       super(props)
@@ -60,5 +62,7 @@ class BlogForm extends React.Component {
         )
     }
 }
-
+BlogForm.propTypes = {
+    postBlog: PropTypes.func.isRequired
+}
 export default BlogForm
