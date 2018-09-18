@@ -36,10 +36,10 @@ render () {
         {this.props.blog.title}  |   by:{this.props.blog.author}
         <br/><a aref={this.props.blog.url}>{this.props.blog.url}</a>
         <p>{this.props.blog.likes} likes</p> <button onClick={this.likeBlog}>like</button>
-        <p>added by {this.props.blog.user.name}</p>
+        <p>added by {this.props.blog.user ? this.props.blog.user.name : 'anonymous'}</p>
         {
           
-          (this.props.user.id === this.props.blog.user["_id"] || this.props.blog.user === undefined) ? 
+          (this.props.blog.user === undefined || this.props.user.id === this.props.blog.user["_id"]) ? 
             <button onClick={this.deleteBlog}>delete</button> : ''
           
 
