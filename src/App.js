@@ -58,20 +58,9 @@ class App extends React.Component {
       .then((result) => {
         const token = result.token
         this.setState({
-          user: this.state.username
+          user: result
         })
-        userService.getAll().then((userResult) => {
-            const user = userResult.find(n => n.username === username)
-            user['token'] = token
-            //set user and reset messages
-            this.setState({
-              user: user ? user : null,
-              username: '',
-              password: '',
-              message: null
-            })
-            window.localStorage.setItem('loggedUser', JSON.stringify(user))
-        })
+        window.localStorage.setItem('loggedUser', JSON.stringify(result))
         blogService.setToken(token)
       }).catch((err) => {
         this.setState({
