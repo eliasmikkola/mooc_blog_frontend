@@ -13,6 +13,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.postBlog = this.postBlog.bind(this);
+    this.likeBlog = this.likeBlog.bind(this);
     this.state = {
       blogs: [],
       username: '',
@@ -109,6 +110,32 @@ class App extends React.Component {
       console.log("ERRR");
     });
   }
+
+
+  likeBlog = (data) => {
+    console.log("LIKE", data);
+    const updatedBlog = {
+        likes: data.likes + 1,
+        title: data.title,
+        author: data.author,
+        url: data.url,
+        user: data.user['_id']
+    }
+
+    blogService.update(data.id, updatedBlog).then((result) => {
+      console.log("resukt",result,  this.state.blogs.map(n => n.id === result.id ? result : n));
+      //set blogs
+      this.setState(prevState => ({
+        blogs: prevState.blogs.map(n => n.id === result.id ? result : n),
+        message: {
+          title: `'${data.title}' liked`,
+          severity: 'success'
+        }
+      }))
+    }).catch((err) => {
+      console.log("errr", err);
+    })
+  }
   
   inputStyle = {
     borderRadius: 6,
@@ -166,7 +193,7 @@ class App extends React.Component {
                   marginTop: 30
               }}>
                 {this.state.blogs.map(blog =>
-                  <Blog key={blog.id} blog={blog}  />
+                  <Blog likeBlog={() => this.likeBlog(blog)} key={blog.id} blog={blog}  />
                 )}
             </div>
           </div>

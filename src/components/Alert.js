@@ -6,9 +6,9 @@ const Alert = ({alert}) => {
     const styles =  {
         'padding':'10px',
         'border': `1px solid ${color}`,
-        'border-color': color,
+        'borderColor': color,
         'color':color,
-        'margin-bottom':'15px',
+        'marginBottom':'15px',
         'width': '100%'
     }
     
