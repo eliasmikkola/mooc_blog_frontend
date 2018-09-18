@@ -32,21 +32,28 @@ class Blog extends React.Component {
 render () {
     return (
       this.state.extended ? 
-      <div style={this.style} onClick={this.toggleExtended}>
+      <div 
+        className='extendedDiv'
+        style={this.style} 
+        onClick={this.toggleExtended}>
+        
         {this.props.blog.title}  |   by:{this.props.blog.author}
         <br/><a aref={this.props.blog.url}>{this.props.blog.url}</a>
-        <p>{this.props.blog.likes} likes</p> <button onClick={this.likeBlog}>like</button>
-        <p>added by {this.props.blog.user ? this.props.blog.user.name : 'anonymous'}</p>
+        <p>{this.props.blog.likes} likes</p> <button className="likeButton" onClick={this.likeBlog}>like</button>
+        <p className="adderText" >added by {this.props.blog.user ? this.props.blog.user.name : 'anonymous'}</p>
         {
           
           (this.props.blog.user === undefined || this.props.user.id === this.props.blog.user["_id"]) ? 
-            <button onClick={this.deleteBlog}>delete</button> : ''
+            <button className="deleteButton" onClick={this.deleteBlog}>delete</button> : ''
           
 
         }
       </div> 
       :
-      <div style={this.style} onClick={this.toggleExtended}>
+      <div 
+        className='compactDiv'
+        style={this.style} 
+        onClick={this.toggleExtended}>
         {this.props.blog.title}  |   by:{this.props.blog.author}
       </div> 
     )
