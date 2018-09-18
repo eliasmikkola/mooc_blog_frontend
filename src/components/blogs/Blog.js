@@ -7,7 +7,9 @@ class Blog extends React.Component {
       extended: false
     }
   }
-
+  componentDidMount = () =>  {
+    console.log(this.props.user, this.props.blog);
+  }
   toggleExtended = () => {
     this.setState({extended: !this.state.extended})
   }
@@ -36,7 +38,13 @@ render () {
         <br/><a aref={this.props.blog.url}>{this.props.blog.url}</a>
         <p>{this.props.blog.likes} likes</p> <button onClick={this.likeBlog}>like</button>
         <p>added by {this.props.blog.user.name}</p>
-        <button onClick={this.deleteBlog}>delete</button>
+        {
+          
+          (this.props.user.id === this.props.blog.user["_id"]) ? 
+            <button onClick={this.deleteBlog}>delete</button> : ''
+          
+
+        }
       </div> 
       :
       <div style={this.style} onClick={this.toggleExtended}>

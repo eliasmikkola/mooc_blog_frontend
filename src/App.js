@@ -152,6 +152,9 @@ class App extends React.Component {
       })
     }
   }
+
+  
+
   
   inputStyle = {
     borderRadius: 6,
@@ -210,7 +213,7 @@ class App extends React.Component {
               }}>
                 {
                   this.state.blogs.sort((a,b) => b.likes - a.likes).map(blog =>
-                    <Blog likeBlog={() => this.likeBlog(blog)} deleteBlog={() => this.deleteBlog(blog)} key={blog.id} blog={blog}  />
+                    <Blog likeBlog={() => this.likeBlog(blog)} deleteBlog={() => this.deleteBlog(blog)} key={blog.id} blog={blog} user={this.state.user}/>
                   )
                 }
             </div>
