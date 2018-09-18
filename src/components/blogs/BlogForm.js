@@ -34,21 +34,21 @@ class BlogForm extends React.Component {
             <h2>create new</h2>
             <form >
                 <label >title</label>
-                <input
+                <input style={this.props.inputStyle}
                     key="title"
                     name="title"
                     type="text"
                     onChange={this.onFieldChange}
                 /><br/>
                 <label>author</label>
-                <input
+                <input style={this.props.inputStyle}
                     key="author"
                     onChange={this.onFieldChange}
                     name="author"
                     type="text"
                 /><br/>
                 <label>url</label>
-                <input
+                <input style={this.props.inputStyle}
                     key="url"
                     onChange={this.onFieldChange}
                     name="url"
