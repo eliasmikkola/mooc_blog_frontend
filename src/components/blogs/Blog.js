@@ -40,7 +40,7 @@ render () {
         <p>added by {this.props.blog.user.name}</p>
         {
           
-          (this.props.user.id === this.props.blog.user["_id"]) ? 
+          (this.props.user.id === this.props.blog.user["_id"] || this.props.blog.user === undefined) ? 
             <button onClick={this.deleteBlog}>delete</button> : ''
           
 
