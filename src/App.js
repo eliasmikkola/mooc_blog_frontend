@@ -192,9 +192,11 @@ class App extends React.Component {
               <div style={{
                   marginTop: 30
               }}>
-                {this.state.blogs.map(blog =>
-                  <Blog likeBlog={() => this.likeBlog(blog)} key={blog.id} blog={blog}  />
-                )}
+                {
+                  this.state.blogs.sort((a,b) => b.likes - a.likes).map(blog =>
+                    <Blog likeBlog={() => this.likeBlog(blog)} key={blog.id} blog={blog}  />
+                  )
+                }
             </div>
           </div>
          )
