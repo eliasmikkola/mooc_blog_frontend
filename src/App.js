@@ -14,6 +14,7 @@ class App extends React.Component {
     super(props)
     this.postBlog = this.postBlog.bind(this);
     this.likeBlog = this.likeBlog.bind(this);
+    this.deleteBlog = this.deleteBlog.bind(this);
     this.state = {
       blogs: [],
       username: '',
@@ -136,6 +137,21 @@ class App extends React.Component {
       console.log("errr", err);
     })
   }
+  deleteBlog = (data) => {
+    if (window.confirm(`Delete ${data.title}?`)){
+      blogService.remove(data.id).then((result) => {
+        this.setState(prevState => ({
+          blogs: prevState.blogs.filter(n => n.id !== data.id),
+          message: {
+            title: `'${data.title}' deleted`,
+            severity: 'success'
+          }
+        }))
+      }).catch((err) => {
+        console.log("errr", err);
+      })
+    }
+  }
   
   inputStyle = {
     borderRadius: 6,
@@ -194,7 +210,7 @@ class App extends React.Component {
               }}>
                 {
                   this.state.blogs.sort((a,b) => b.likes - a.likes).map(blog =>
-                    <Blog likeBlog={() => this.likeBlog(blog)} key={blog.id} blog={blog}  />
+                    <Blog likeBlog={() => this.likeBlog(blog)} deleteBlog={() => this.deleteBlog(blog)} key={blog.id} blog={blog}  />
                   )
                 }
             </div>

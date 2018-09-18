@@ -11,10 +11,15 @@ class Blog extends React.Component {
   toggleExtended = () => {
     this.setState({extended: !this.state.extended})
   }
-  handleClick = (e) => {
+  likeBlog = (e) => {
     e.stopPropagation();
 
     this.props.likeBlog()
+  }
+
+  deleteBlog = (e) => {
+    e.stopPropagation();
+    this.props.deleteBlog()
   }
 
  style = {
@@ -29,8 +34,9 @@ render () {
       <div style={this.style} onClick={this.toggleExtended}>
         {this.props.blog.title}  |   by:{this.props.blog.author}
         <br/><a aref={this.props.blog.url}>{this.props.blog.url}</a>
-        <p>{this.props.blog.likes} likes</p> <button onClick={this.handleClick}>like</button>
+        <p>{this.props.blog.likes} likes</p> <button onClick={this.likeBlog}>like</button>
         <p>added by {this.props.blog.user.name}</p>
+        <button onClick={this.deleteBlog}>delete</button>
       </div> 
       :
       <div style={this.style} onClick={this.toggleExtended}>
