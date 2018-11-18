@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Router, Route, Link } from 'react-router-dom'
+import {Link } from 'react-router-dom'
 
 class Blog extends React.Component {
   constructor(props) {
@@ -25,22 +25,22 @@ class Blog extends React.Component {
 render () {
     return (
       this.props.extended ? 
-      <div class="panel-block">
+      <div className="box">
         
-        {this.props.blog.title}  |   by:{this.props.blog.author}
+        <h1 className="title">{this.props.blog.title}  |   by:{this.props.blog.author}</h1>
         <br/><a aref={this.props.blog.url}>{this.props.blog.url}</a>
-        <p>{this.props.blog.likes} likes</p> <button className="likeButton" onClick={this.likeBlog}>like</button>
+        <p className="title">{this.props.blog.likes} likes</p> <button className="likeButton" onClick={this.likeBlog}>like</button>
         <p className="adderText" >added by {this.props.blog.user ? this.props.blog.user.name : 'anonymous'}</p>
         {
           
-          (this.props.blog.user === undefined || this.props.user.id === this.props.blog.user["_id"]) ? 
+          (this.props.blog.user === undefined || (this.props.user && this.props.user.id === this.props.blog.user["_id"])) ? 
             <button className="deleteButton" onClick={this.deleteBlog}>delete</button> : ''
           
 
         }
       </div> 
       :
-      <div class="panel-block" >
+      <div className="panel-block" >
           <Link to={`/blogs/${this.props.blog.id}`}>{this.props.blog.title}  |   by:{this.props.blog.author}</Link>
       </div> 
     )

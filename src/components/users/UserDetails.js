@@ -4,14 +4,14 @@ const UserDetails = ({user}) => (
     {
         user ? 
         <div>
-            <h1 class="title">{user.name}</h1>
-            <h2 class="subtitle">Added blogs</h2>
+            <h1 className="title">{user.name}</h1>
+            <h2 className="subtitle">Added blogs</h2>
             <ul>
                 {
                     user.blogs.length > 0 ? 
                     (
                         user.blogs.map(blog => (
-                            <li>
+                            <li key={blog._id}>
                                 <p>{blog.title} by: {blog.author}</p>
                             </li>
                         ))

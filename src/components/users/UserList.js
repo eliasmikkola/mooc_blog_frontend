@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as  Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 class UserList extends React.Component {
@@ -11,8 +11,8 @@ class UserList extends React.Component {
 render () {
     return (
       <div>
-        <table class="table  is-bordered">
-            <thead class="thead">
+        <table className="table  is-bordered">
+            <thead className="thead">
                 <tr>
                     <td >Name</td>
                     <td >Blogs added</td>

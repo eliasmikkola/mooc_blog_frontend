@@ -32,12 +32,12 @@ class BlogForm extends React.Component {
       }
     render() {
         return (
-            <div class="container">
-            <h2 class="subtitle">Add new blog</h2>
-            <form class="form">
-                <div class="field">
-                    <a class="label" >title</a>    
-                        <input class="input" 
+            <div className="container">
+            <h2 className="subtitle">Add new blog</h2>
+            <form className="form">
+                <div className="field">
+                    <a className="label" >title</a>    
+                        <input className="input" 
                             key="title"
                             name="title"
                             type="text"
@@ -46,10 +46,10 @@ class BlogForm extends React.Component {
                     </div>
                 
                             
-                <div class="field">
-                    <a class="label">author</a>
+                <div className="field">
+                    <a className="label">author</a>
 
-                        <input class="input" 
+                        <input className="input" 
                             key="author"
                             onChange={this.onFieldChange}
                             name="author"
@@ -57,10 +57,10 @@ class BlogForm extends React.Component {
                             />
                             
                 </div>
-                <div class="field">
-                    <a class="label">url</a>
+                <div className="field">
+                    <a className="label">url</a>
 
-                    <input class="input" 
+                    <input className="input" 
                         key="url"
                         onChange={this.onFieldChange}
                         name="url"
@@ -69,7 +69,7 @@ class BlogForm extends React.Component {
                         
                 </div>
             </form>
-            <button class="button is-success" onClick={this.postBlog}>Create</button>
+            <button className="button is-success" onClick={this.postBlog}>Create</button>
             </div>
         )
     }

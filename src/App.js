@@ -6,10 +6,10 @@ import Blog from './components/blogs/Blog'
 import LoggedInUser from './components/users/User'
 import UserDetails from './components/users/UserDetails'
 import Alert from './components/Alert'
-import { createBrowserHistory } from 'history';
 
 
-import { BrowserRouter as Router, Route, Link, withRouter } from 'react-router-dom'
+
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 
 import blogService from './services/blogs'
 import loginService from './services/login'
@@ -181,17 +181,17 @@ class Wrapper extends React.Component {
         
 
         <Router>
-          <div class="container">
+          <div className="container">
           { 
           this.state.message !== null ? <Alert alert={this.state.message}/> :'' 
         }
             { this.state.user !== null ?
-            <div class="tabs">
-              <Link activeClassName="is-active"   to="/">blogs</Link> &nbsp;
-              <Link activeClassName="is-active"   to="/users">users</Link>
-              <div class="navbar-end">
+            <div className="tabs">
+              <NavLink activeClassName="is-active"   to="/">blogs</NavLink> &nbsp;
+              <NavLink activeClassName="is-active"   to="/users">users</NavLink>
+              <div className="navbar-end">
                 <LoggedInUser user={this.state.user}/>
-                <button class="button is-warning"
+                <button className="button is-warning"
                   key='logout' 
                   onClick={this.logout}>LOGOUT
                 </button>
@@ -204,29 +204,29 @@ class Wrapper extends React.Component {
             return this.state.user === null ?
             (  <div>
 
-                  <h2 class="title">Kirjaudu sovellukseen</h2>
-                  <form class="form" onSubmit={this.login}>
-                    <label class="label">Username</label>
-                    <input class="input"
+                  <h2 className="title">Kirjaudu sovellukseen</h2>
+                  <form className="form" onSubmit={this.login}>
+                    <label className="label">Username</label>
+                    <input className="input"
                       key="username"
                       name="username"
                       type="text"
                       onChange={this.onFieldChange}
                       /><br/>
-                    <label class="label">Password</label>
-                    <input class="input"
+                    <label className="label">Password</label>
+                    <input className="input"
                       key="password"
                       onChange={this.onFieldChange}
                       name="password"
                       type="password"
                       />
                   </form>
-                  <button class="button is-primary" onClick={this.login}>Login</button>
+                  <button className="button is-primary" onClick={this.login}>Login</button>
                   </div>
               ) :
               (<div>
               
-              <h2 class="title">blogs</h2>
+              <h2 className="title">blogs</h2>
               <BlogForm postBlog={this.postBlog} />
                 <div style={{
                   marginTop: 30
@@ -237,7 +237,7 @@ class Wrapper extends React.Component {
           )
           }} />
           <Route exact path="/users" render={() => <UserList users={this.state.users}/>} />
-          {this.state.users.length > 0 ? 
+          {this.state.users.length > 0 && this.state.user !== null ? 
             <Route exact path="/users/:id" render={({match}) =>
               <UserDetails user={this.userById(match.params.id)} />}
             /> : ''
@@ -247,7 +247,7 @@ class Wrapper extends React.Component {
             const matchedBlog = this.blogById(match.params.id)
             console.log("BLOG", matchedBlog)
             return (
-                matchedBlog ? <Blog blog={matchedBlog} extended={true} likeBlog={() => this.likeBlog(matchedBlog)} deleteBlog={() => this.deleteBlog(matchedBlog)}  user={this.state.user} extended={true}/> 
+                matchedBlog && this.state.user !== null ? <Blog blog={matchedBlog} likeBlog={() => this.likeBlog(matchedBlog)} deleteBlog={() => this.deleteBlog(matchedBlog)}  user={this.state.user} extended={true}/> 
                 : <p>No blog found</p>
               )
             }
