@@ -7,9 +7,10 @@ jest.mock('./services/blogs')
 import blogService from './services/blogs'
 
 describe('<App />', () => {
-    let app
+    
   
     describe('when user is not logged', () => {
+        let app
       beforeEach(() => {
         // luo sovellus siten, että käyttäjä ei ole kirjautuneena
             app = mount(<App/>)
@@ -23,6 +24,7 @@ describe('<App />', () => {
     })
   
     describe.only('when user is logged', () => {
+        let app
       beforeEach(() => {
         // luo sovellus siten, että käyttäjä on kirjautuneena
         const user = {
@@ -32,12 +34,14 @@ describe('<App />', () => {
         }
         window.localStorage.setItem("loggedUser", JSON.stringify(user))
         app = mount(<App/>)
+        
+
             
       })
   
       it('all notes are rendered', () => {
-       
         app.update()
+        
         const blogComponents = app.find(Blog)
         expect(blogComponents.length).toEqual(blogService.blogs.length)
       })

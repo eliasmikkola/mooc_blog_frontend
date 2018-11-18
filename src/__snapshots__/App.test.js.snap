@@ -1,0 +1,3017 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> when user is logged all notes are rendered 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": App {
+      "_reactInternalFiber": FiberNode {
+        "_debugID": 33,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": FiberNode {
+          "_debugID": 32,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "alternate": null,
+          "child": [Circular],
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "internalContextTag": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {},
+          },
+          "nextEffect": null,
+          "pendingProps": null,
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 30,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": FiberNode {
+              "_debugID": 30,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": [Circular],
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 1,
+              "firstEffect": null,
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div>
+                                    <div>
+                                                      <h2>
+                                                                        Kirjaudu sovellukseen
+                                                      </h2>
+                                                      <form
+                                                                        class="loginForm"
+                                                      >
+                                                                        <label>
+                                                                                          Username
+                                                                        </label>
+                                                                        <input
+                                                                                          type="text"
+                                                                                          style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                          name="username"
+                                                                        />
+                                                                        <br />
+                                                                        <label>
+                                                                                          Password
+                                                                        </label>
+                                                                        <input
+                                                                                          type="password"
+                                                                                          style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                          name="password"
+                                                                        />
+                                                      </form>
+                                                      <button>
+                                                                        Login
+                                                      </button>
+                                    </div>
+                  </div>
+</div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "hydrate": false,
+                "isReadyForCommit": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "callbackList": null,
+                "expirationTime": 1,
+                "first": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "nextCallback": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+/>,
+                  },
+                },
+                "hasForceUpdate": false,
+                "isInitialized": false,
+                "isProcessing": false,
+                "last": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "nextCallback": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+/>,
+                  },
+                },
+              },
+            },
+            "child": [Circular],
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": [Circular],
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={Object {}}
+/>,
+            },
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div>
+                                <div>
+                                                <h2>
+                                                                Kirjaudu sovellukseen
+                                                </h2>
+                                                <form
+                                                                class="loginForm"
+                                                >
+                                                                <label>
+                                                                                Username
+                                                                </label>
+                                                                <input
+                                                                                type="text"
+                                                                                style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                name="username"
+                                                                />
+                                                                <br />
+                                                                <label>
+                                                                                Password
+                                                                </label>
+                                                                <input
+                                                                                type="password"
+                                                                                style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                name="password"
+                                                                />
+                                                </form>
+                                                <button>
+                                                                Login
+                                                </button>
+                                </div>
+                </div>
+</div>,
+              "context": Object {},
+              "current": [Circular],
+              "finishedWork": null,
+              "hydrate": false,
+              "isReadyForCommit": false,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingContext": null,
+              "remainingExpirationTime": 0,
+            },
+            "tag": 3,
+            "type": null,
+            "updateQueue": null,
+          },
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 2,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_debugSource": null,
+        "alternate": null,
+        "child": FiberNode {
+          "_debugID": 34,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": [Circular],
+          "_debugSource": Object {
+            "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+            "lineNumber": 163,
+          },
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 35,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": null,
+            "child": null,
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": "",
+            "memoizedState": null,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": [Circular],
+            "sibling": FiberNode {
+              "_debugID": 36,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": Object {
+                "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                "lineNumber": 169,
+              },
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 37,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": Object {
+                  "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                  "lineNumber": 171,
+                },
+                "alternate": null,
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 0,
+                "internalContextTag": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": "Kirjaudu sovellukseen",
+                },
+                "memoizedState": null,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": [Circular],
+                "sibling": FiberNode {
+                  "_debugID": 38,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": Object {
+                    "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                    "lineNumber": 172,
+                  },
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugID": 40,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": Object {
+                      "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                      "lineNumber": 173,
+                    },
+                    "alternate": null,
+                    "child": null,
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 0,
+                    "internalContextTag": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": "Username",
+                    },
+                    "memoizedState": null,
+                    "nextEffect": null,
+                    "pendingProps": null,
+                    "ref": null,
+                    "return": [Circular],
+                    "sibling": FiberNode {
+                      "_debugID": 41,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": Object {
+                        "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                        "lineNumber": 174,
+                      },
+                      "alternate": null,
+                      "child": null,
+                      "effectTag": 0,
+                      "expirationTime": 0,
+                      "firstEffect": null,
+                      "index": 1,
+                      "internalContextTag": 0,
+                      "key": "username",
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "name": "username",
+                        "onChange": [Function],
+                        "style": Object {
+                          "borderRadius": 6,
+                          "height": 20,
+                          "marginBottom": 10,
+                          "marginLeft": 5,
+                          "padding": 5,
+                        },
+                        "type": "text",
+                      },
+                      "memoizedState": null,
+                      "nextEffect": null,
+                      "pendingProps": null,
+                      "ref": null,
+                      "return": [Circular],
+                      "sibling": FiberNode {
+                        "_debugID": 42,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": Object {
+                          "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                          "lineNumber": 179,
+                        },
+                        "alternate": null,
+                        "child": null,
+                        "effectTag": 0,
+                        "expirationTime": 0,
+                        "firstEffect": null,
+                        "index": 2,
+                        "internalContextTag": 0,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": Object {},
+                        "memoizedState": null,
+                        "nextEffect": null,
+                        "pendingProps": null,
+                        "ref": null,
+                        "return": [Circular],
+                        "sibling": FiberNode {
+                          "_debugID": 43,
+                          "_debugIsCurrentlyTiming": false,
+                          "_debugOwner": [Circular],
+                          "_debugSource": Object {
+                            "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                            "lineNumber": 180,
+                          },
+                          "alternate": null,
+                          "child": null,
+                          "effectTag": 0,
+                          "expirationTime": 0,
+                          "firstEffect": null,
+                          "index": 3,
+                          "internalContextTag": 0,
+                          "key": null,
+                          "lastEffect": null,
+                          "memoizedProps": Object {
+                            "children": "Password",
+                          },
+                          "memoizedState": null,
+                          "nextEffect": null,
+                          "pendingProps": null,
+                          "ref": null,
+                          "return": [Circular],
+                          "sibling": FiberNode {
+                            "_debugID": 44,
+                            "_debugIsCurrentlyTiming": false,
+                            "_debugOwner": [Circular],
+                            "_debugSource": Object {
+                              "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                              "lineNumber": 181,
+                            },
+                            "alternate": null,
+                            "child": null,
+                            "effectTag": 0,
+                            "expirationTime": 0,
+                            "firstEffect": null,
+                            "index": 4,
+                            "internalContextTag": 0,
+                            "key": "password",
+                            "lastEffect": null,
+                            "memoizedProps": Object {
+                              "name": "password",
+                              "onChange": [Function],
+                              "style": Object {
+                                "borderRadius": 6,
+                                "height": 20,
+                                "marginBottom": 10,
+                                "marginLeft": 5,
+                                "padding": 5,
+                              },
+                              "type": "password",
+                            },
+                            "memoizedState": null,
+                            "nextEffect": null,
+                            "pendingProps": null,
+                            "ref": null,
+                            "return": [Circular],
+                            "sibling": null,
+                            "stateNode": <input
+                              type="password"
+                              style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                              name="password"
+/>,
+                            "tag": 5,
+                            "type": "input",
+                            "updateQueue": null,
+                          },
+                          "stateNode": <label>
+                            Password
+</label>,
+                          "tag": 5,
+                          "type": "label",
+                          "updateQueue": null,
+                        },
+                        "stateNode": <br />,
+                        "tag": 5,
+                        "type": "br",
+                        "updateQueue": null,
+                      },
+                      "stateNode": <input
+                        type="text"
+                        style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                        name="username"
+/>,
+                      "tag": 5,
+                      "type": "input",
+                      "updateQueue": null,
+                    },
+                    "stateNode": <label>
+                      Username
+</label>,
+                    "tag": 5,
+                    "type": "label",
+                    "updateQueue": null,
+                  },
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 1,
+                  "internalContextTag": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": Array [
+                      <label>
+                        Username
+</label>,
+                      <input
+                        name="username"
+                        onChange={[Function]}
+                        style={
+                                                Object {
+                                                                        "borderRadius": 6,
+                                                                        "height": 20,
+                                                                        "marginBottom": 10,
+                                                                        "marginLeft": 5,
+                                                                        "padding": 5,
+                                                                      }
+                        }
+                        type="text"
+/>,
+                      <br />,
+                      <label>
+                        Password
+</label>,
+                      <input
+                        name="password"
+                        onChange={[Function]}
+                        style={
+                                                Object {
+                                                                        "borderRadius": 6,
+                                                                        "height": 20,
+                                                                        "marginBottom": 10,
+                                                                        "marginLeft": 5,
+                                                                        "padding": 5,
+                                                                      }
+                        }
+                        type="password"
+/>,
+                    ],
+                    "className": "loginForm",
+                    "onSubmit": [Function],
+                  },
+                  "memoizedState": null,
+                  "nextEffect": null,
+                  "pendingProps": null,
+                  "ref": null,
+                  "return": [Circular],
+                  "sibling": FiberNode {
+                    "_debugID": 39,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": Object {
+                      "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                      "lineNumber": 188,
+                    },
+                    "alternate": null,
+                    "child": null,
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 2,
+                    "internalContextTag": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": "Login",
+                      "onClick": [Function],
+                    },
+                    "memoizedState": null,
+                    "nextEffect": null,
+                    "pendingProps": null,
+                    "ref": null,
+                    "return": [Circular],
+                    "sibling": null,
+                    "stateNode": <button>
+                      Login
+</button>,
+                    "tag": 5,
+                    "type": "button",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <form
+                    class="loginForm"
+>
+                    <label>
+                                        Username
+                    </label>
+                    <input
+                                        type="text"
+                                        style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                        name="username"
+                    />
+                    <br />
+                    <label>
+                                        Password
+                    </label>
+                    <input
+                                        type="password"
+                                        style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                        name="password"
+                    />
+</form>,
+                  "tag": 5,
+                  "type": "form",
+                  "updateQueue": null,
+                },
+                "stateNode": <h2>
+                  Kirjaudu sovellukseen
+</h2>,
+                "tag": 5,
+                "type": "h2",
+                "updateQueue": null,
+              },
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 1,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": Array [
+                  <h2>
+                    Kirjaudu sovellukseen
+</h2>,
+                  <form
+                    className="loginForm"
+                    onSubmit={[Function]}
+>
+                    <label>
+                                        Username
+                    </label>
+                    <input
+                                        name="username"
+                                        onChange={[Function]}
+                                        style={
+                                                            Object {
+                                                                                "borderRadius": 6,
+                                                                                "height": 20,
+                                                                                "marginBottom": 10,
+                                                                                "marginLeft": 5,
+                                                                                "padding": 5,
+                                                                              }
+                                        }
+                                        type="text"
+                    />
+                    <br />
+                    <label>
+                                        Password
+                    </label>
+                    <input
+                                        name="password"
+                                        onChange={[Function]}
+                                        style={
+                                                            Object {
+                                                                                "borderRadius": 6,
+                                                                                "height": 20,
+                                                                                "marginBottom": 10,
+                                                                                "marginLeft": 5,
+                                                                                "padding": 5,
+                                                                              }
+                                        }
+                                        type="password"
+                    />
+</form>,
+                  <button
+                    onClick={[Function]}
+>
+                    Login
+</button>,
+                ],
+              },
+              "memoizedState": null,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": [Circular],
+              "sibling": null,
+              "stateNode": <div>
+                <h2>
+                                Kirjaudu sovellukseen
+                </h2>
+                <form
+                                class="loginForm"
+                >
+                                <label>
+                                                Username
+                                </label>
+                                <input
+                                                type="text"
+                                                style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                name="username"
+                                />
+                                <br />
+                                <label>
+                                                Password
+                                </label>
+                                <input
+                                                type="password"
+                                                style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                name="password"
+                                />
+                </form>
+                <button>
+                                Login
+                </button>
+</div>,
+              "tag": 5,
+              "type": "div",
+              "updateQueue": null,
+            },
+            "stateNode": ,
+            "tag": 6,
+            "type": null,
+            "updateQueue": null,
+          },
+          "effectTag": 0,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "internalContextTag": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "children": Array [
+              "",
+              <div>
+                <h2>
+                                Kirjaudu sovellukseen
+                </h2>
+                <form
+                                className="loginForm"
+                                onSubmit={[Function]}
+                >
+                                <label>
+                                                Username
+                                </label>
+                                <input
+                                                name="username"
+                                                onChange={[Function]}
+                                                style={
+                                                                Object {
+                                                                                "borderRadius": 6,
+                                                                                "height": 20,
+                                                                                "marginBottom": 10,
+                                                                                "marginLeft": 5,
+                                                                                "padding": 5,
+                                                                              }
+                                                }
+                                                type="text"
+                                />
+                                <br />
+                                <label>
+                                                Password
+                                </label>
+                                <input
+                                                name="password"
+                                                onChange={[Function]}
+                                                style={
+                                                                Object {
+                                                                                "borderRadius": 6,
+                                                                                "height": 20,
+                                                                                "marginBottom": 10,
+                                                                                "marginLeft": 5,
+                                                                                "padding": 5,
+                                                                              }
+                                                }
+                                                type="password"
+                                />
+                </form>
+                <button
+                                onClick={[Function]}
+                >
+                                Login
+                </button>
+</div>,
+            ],
+          },
+          "memoizedState": null,
+          "nextEffect": null,
+          "pendingProps": null,
+          "ref": null,
+          "return": [Circular],
+          "sibling": null,
+          "stateNode": <div>
+            <div>
+                        <h2>
+                                    Kirjaudu sovellukseen
+                        </h2>
+                        <form
+                                    class="loginForm"
+                        >
+                                    <label>
+                                                Username
+                                    </label>
+                                    <input
+                                                type="text"
+                                                style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                name="username"
+                                    />
+                                    <br />
+                                    <label>
+                                                Password
+                                    </label>
+                                    <input
+                                                type="password"
+                                                style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                name="password"
+                                    />
+                        </form>
+                        <button>
+                                    Login
+                        </button>
+            </div>
+</div>,
+          "tag": 5,
+          "type": "div",
+          "updateQueue": null,
+        },
+        "effectTag": 1,
+        "expirationTime": 0,
+        "firstEffect": null,
+        "index": 0,
+        "internalContextTag": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": Object {},
+        "memoizedState": Object {
+          "blogs": Array [],
+          "message": null,
+          "password": "",
+          "user": null,
+          "username": "",
+        },
+        "nextEffect": null,
+        "pendingProps": null,
+        "ref": null,
+        "return": FiberNode {
+          "_debugID": 32,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "alternate": null,
+          "child": [Circular],
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "internalContextTag": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {},
+          },
+          "nextEffect": null,
+          "pendingProps": null,
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 30,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": FiberNode {
+              "_debugID": 30,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": [Circular],
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 1,
+              "firstEffect": null,
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div>
+                                    <div>
+                                                      <h2>
+                                                                        Kirjaudu sovellukseen
+                                                      </h2>
+                                                      <form
+                                                                        class="loginForm"
+                                                      >
+                                                                        <label>
+                                                                                          Username
+                                                                        </label>
+                                                                        <input
+                                                                                          type="text"
+                                                                                          style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                          name="username"
+                                                                        />
+                                                                        <br />
+                                                                        <label>
+                                                                                          Password
+                                                                        </label>
+                                                                        <input
+                                                                                          type="password"
+                                                                                          style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                          name="password"
+                                                                        />
+                                                      </form>
+                                                      <button>
+                                                                        Login
+                                                      </button>
+                                    </div>
+                  </div>
+</div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "hydrate": false,
+                "isReadyForCommit": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "callbackList": null,
+                "expirationTime": 1,
+                "first": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "nextCallback": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+/>,
+                  },
+                },
+                "hasForceUpdate": false,
+                "isInitialized": false,
+                "isProcessing": false,
+                "last": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "nextCallback": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+/>,
+                  },
+                },
+              },
+            },
+            "child": [Circular],
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": [Circular],
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={Object {}}
+/>,
+            },
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div>
+                                <div>
+                                                <h2>
+                                                                Kirjaudu sovellukseen
+                                                </h2>
+                                                <form
+                                                                class="loginForm"
+                                                >
+                                                                <label>
+                                                                                Username
+                                                                </label>
+                                                                <input
+                                                                                type="text"
+                                                                                style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                name="username"
+                                                                />
+                                                                <br />
+                                                                <label>
+                                                                                Password
+                                                                </label>
+                                                                <input
+                                                                                type="password"
+                                                                                style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                name="password"
+                                                                />
+                                                </form>
+                                                <button>
+                                                                Login
+                                                </button>
+                                </div>
+                </div>
+</div>,
+              "context": Object {},
+              "current": [Circular],
+              "finishedWork": null,
+              "hydrate": false,
+              "isReadyForCommit": false,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingContext": null,
+              "remainingExpirationTime": 0,
+            },
+            "tag": 3,
+            "type": null,
+            "updateQueue": null,
+          },
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 2,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "sibling": null,
+        "stateNode": [Circular],
+        "tag": 2,
+        "type": [Function],
+        "updateQueue": null,
+      },
+      "_reactInternalInstance": Object {},
+      "context": Object {},
+      "deleteBlog": [Function],
+      "inputStyle": Object {
+        "borderRadius": 6,
+        "height": 20,
+        "marginBottom": 10,
+        "marginLeft": 5,
+        "padding": 5,
+      },
+      "likeBlog": [Function],
+      "login": [Function],
+      "logout": [Function],
+      "onFieldChange": [Function],
+      "postBlog": [Function],
+      "props": Object {},
+      "refs": Object {},
+      "state": Object {
+        "blogs": Array [],
+        "message": null,
+        "password": "",
+        "user": null,
+        "username": "",
+      },
+      "updater": Object {
+        "enqueueForceUpdate": [Function],
+        "enqueueReplaceState": [Function],
+        "enqueueSetState": [Function],
+        "isMounted": [Function],
+      },
+    },
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {},
+    "ref": null,
+    "rendered": Object {
+      "instance": <div>
+        <div>
+                <h2>
+                        Kirjaudu sovellukseen
+                </h2>
+                <form
+                        class="loginForm"
+                >
+                        <label>
+                                Username
+                        </label>
+                        <input
+                                type="text"
+                                style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                name="username"
+                        />
+                        <br />
+                        <label>
+                                Password
+                        </label>
+                        <input
+                                type="password"
+                                style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                name="password"
+                        />
+                </form>
+                <button>
+                        Login
+                </button>
+        </div>
+</div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          "",
+          <div>
+            <h2>
+                        Kirjaudu sovellukseen
+            </h2>
+            <form
+                        className="loginForm"
+                        onSubmit={[Function]}
+            >
+                        <label>
+                                    Username
+                        </label>
+                        <input
+                                    name="username"
+                                    onChange={[Function]}
+                                    style={
+                                                Object {
+                                                            "borderRadius": 6,
+                                                            "height": 20,
+                                                            "marginBottom": 10,
+                                                            "marginLeft": 5,
+                                                            "padding": 5,
+                                                          }
+                                    }
+                                    type="text"
+                        />
+                        <br />
+                        <label>
+                                    Password
+                        </label>
+                        <input
+                                    name="password"
+                                    onChange={[Function]}
+                                    style={
+                                                Object {
+                                                            "borderRadius": 6,
+                                                            "height": 20,
+                                                            "marginBottom": 10,
+                                                            "marginLeft": 5,
+                                                            "padding": 5,
+                                                          }
+                                    }
+                                    type="password"
+                        />
+            </form>
+            <button
+                        onClick={[Function]}
+            >
+                        Login
+            </button>
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        "",
+        Object {
+          "instance": <div>
+            <h2>
+                        Kirjaudu sovellukseen
+            </h2>
+            <form
+                        class="loginForm"
+            >
+                        <label>
+                                    Username
+                        </label>
+                        <input
+                                    type="text"
+                                    style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                    name="username"
+                        />
+                        <br />
+                        <label>
+                                    Password
+                        </label>
+                        <input
+                                    type="password"
+                                    style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                    name="password"
+                        />
+            </form>
+            <button>
+                        Login
+            </button>
+</div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Kirjaudu sovellukseen
+</h2>,
+              <form
+                className="loginForm"
+                onSubmit={[Function]}
+>
+                <label>
+                                Username
+                </label>
+                <input
+                                name="username"
+                                onChange={[Function]}
+                                style={
+                                                Object {
+                                                                "borderRadius": 6,
+                                                                "height": 20,
+                                                                "marginBottom": 10,
+                                                                "marginLeft": 5,
+                                                                "padding": 5,
+                                                              }
+                                }
+                                type="text"
+                />
+                <br />
+                <label>
+                                Password
+                </label>
+                <input
+                                name="password"
+                                onChange={[Function]}
+                                style={
+                                                Object {
+                                                                "borderRadius": 6,
+                                                                "height": 20,
+                                                                "marginBottom": 10,
+                                                                "marginLeft": 5,
+                                                                "padding": 5,
+                                                              }
+                                }
+                                type="password"
+                />
+</form>,
+              <button
+                onClick={[Function]}
+>
+                Login
+</button>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <h2>
+                Kirjaudu sovellukseen
+</h2>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Kirjaudu sovellukseen",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Kirjaudu sovellukseen",
+              ],
+              "type": "h2",
+            },
+            Object {
+              "instance": <form
+                class="loginForm"
+>
+                <label>
+                                Username
+                </label>
+                <input
+                                type="text"
+                                style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                name="username"
+                />
+                <br />
+                <label>
+                                Password
+                </label>
+                <input
+                                type="password"
+                                style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                name="password"
+                />
+</form>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <label>
+                    Username
+</label>,
+                  <input
+                    name="username"
+                    onChange={[Function]}
+                    style={
+                                        Object {
+                                                            "borderRadius": 6,
+                                                            "height": 20,
+                                                            "marginBottom": 10,
+                                                            "marginLeft": 5,
+                                                            "padding": 5,
+                                                          }
+                    }
+                    type="text"
+/>,
+                  <br />,
+                  <label>
+                    Password
+</label>,
+                  <input
+                    name="password"
+                    onChange={[Function]}
+                    style={
+                                        Object {
+                                                            "borderRadius": 6,
+                                                            "height": 20,
+                                                            "marginBottom": 10,
+                                                            "marginLeft": 5,
+                                                            "padding": 5,
+                                                          }
+                    }
+                    type="password"
+/>,
+                ],
+                "className": "loginForm",
+                "onSubmit": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <label>
+                    Username
+</label>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Username",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Username",
+                  ],
+                  "type": "label",
+                },
+                Object {
+                  "instance": <input
+                    type="text"
+                    style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                    name="username"
+/>,
+                  "key": "username",
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "username",
+                    "onChange": [Function],
+                    "style": Object {
+                      "borderRadius": 6,
+                      "height": 20,
+                      "marginBottom": 10,
+                      "marginLeft": 5,
+                      "padding": 5,
+                    },
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    undefined,
+                  ],
+                  "type": "input",
+                },
+                Object {
+                  "instance": <br />,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": Array [
+                    undefined,
+                  ],
+                  "type": "br",
+                },
+                Object {
+                  "instance": <label>
+                    Password
+</label>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Password",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Password",
+                  ],
+                  "type": "label",
+                },
+                Object {
+                  "instance": <input
+                    type="password"
+                    style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                    name="password"
+/>,
+                  "key": "password",
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "password",
+                    "onChange": [Function],
+                    "style": Object {
+                      "borderRadius": 6,
+                      "height": 20,
+                      "marginBottom": 10,
+                      "marginLeft": 5,
+                      "padding": 5,
+                    },
+                    "type": "password",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    undefined,
+                  ],
+                  "type": "input",
+                },
+              ],
+              "type": "form",
+            },
+            Object {
+              "instance": <button>
+                Login
+</button>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Login",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Login",
+              ],
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": App {
+        "_reactInternalFiber": FiberNode {
+          "_debugID": 33,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": FiberNode {
+            "_debugID": 32,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": null,
+            "child": [Circular],
+            "effectTag": 1,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 30,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": FiberNode {
+                "_debugID": 30,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "alternate": [Circular],
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 1,
+                "firstEffect": null,
+                "index": 0,
+                "internalContextTag": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div>
+                                        <div>
+                                                            <h2>
+                                                                                Kirjaudu sovellukseen
+                                                            </h2>
+                                                            <form
+                                                                                class="loginForm"
+                                                            >
+                                                                                <label>
+                                                                                                    Username
+                                                                                </label>
+                                                                                <input
+                                                                                                    type="text"
+                                                                                                    style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                                    name="username"
+                                                                                />
+                                                                                <br />
+                                                                                <label>
+                                                                                                    Password
+                                                                                </label>
+                                                                                <input
+                                                                                                    type="password"
+                                                                                                    style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                                    name="password"
+                                                                                />
+                                                            </form>
+                                                            <button>
+                                                                                Login
+                                                            </button>
+                                        </div>
+                    </div>
+</div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "finishedWork": null,
+                  "hydrate": false,
+                  "isReadyForCommit": false,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingContext": null,
+                  "remainingExpirationTime": 0,
+                },
+                "tag": 3,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "callbackList": null,
+                  "expirationTime": 1,
+                  "first": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "nextCallback": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+/>,
+                    },
+                  },
+                  "hasForceUpdate": false,
+                  "isInitialized": false,
+                  "isProcessing": false,
+                  "last": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "nextCallback": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+/>,
+                    },
+                  },
+                },
+              },
+              "child": [Circular],
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": [Circular],
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+/>,
+              },
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div>
+                                    <div>
+                                                      <h2>
+                                                                        Kirjaudu sovellukseen
+                                                      </h2>
+                                                      <form
+                                                                        class="loginForm"
+                                                      >
+                                                                        <label>
+                                                                                          Username
+                                                                        </label>
+                                                                        <input
+                                                                                          type="text"
+                                                                                          style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                          name="username"
+                                                                        />
+                                                                        <br />
+                                                                        <label>
+                                                                                          Password
+                                                                        </label>
+                                                                        <input
+                                                                                          type="password"
+                                                                                          style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                          name="password"
+                                                                        />
+                                                      </form>
+                                                      <button>
+                                                                        Login
+                                                      </button>
+                                    </div>
+                  </div>
+</div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "hydrate": false,
+                "isReadyForCommit": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": null,
+            },
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {},
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {},
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 2,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "_debugSource": null,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 34,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": Object {
+              "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+              "lineNumber": 163,
+            },
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 35,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": null,
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": "",
+              "memoizedState": null,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": [Circular],
+              "sibling": FiberNode {
+                "_debugID": 36,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": Object {
+                  "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                  "lineNumber": 169,
+                },
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 37,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": Object {
+                    "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                    "lineNumber": 171,
+                  },
+                  "alternate": null,
+                  "child": null,
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 0,
+                  "internalContextTag": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": "Kirjaudu sovellukseen",
+                  },
+                  "memoizedState": null,
+                  "nextEffect": null,
+                  "pendingProps": null,
+                  "ref": null,
+                  "return": [Circular],
+                  "sibling": FiberNode {
+                    "_debugID": 38,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": Object {
+                      "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                      "lineNumber": 172,
+                    },
+                    "alternate": null,
+                    "child": FiberNode {
+                      "_debugID": 40,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": Object {
+                        "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                        "lineNumber": 173,
+                      },
+                      "alternate": null,
+                      "child": null,
+                      "effectTag": 0,
+                      "expirationTime": 0,
+                      "firstEffect": null,
+                      "index": 0,
+                      "internalContextTag": 0,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "children": "Username",
+                      },
+                      "memoizedState": null,
+                      "nextEffect": null,
+                      "pendingProps": null,
+                      "ref": null,
+                      "return": [Circular],
+                      "sibling": FiberNode {
+                        "_debugID": 41,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": Object {
+                          "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                          "lineNumber": 174,
+                        },
+                        "alternate": null,
+                        "child": null,
+                        "effectTag": 0,
+                        "expirationTime": 0,
+                        "firstEffect": null,
+                        "index": 1,
+                        "internalContextTag": 0,
+                        "key": "username",
+                        "lastEffect": null,
+                        "memoizedProps": Object {
+                          "name": "username",
+                          "onChange": [Function],
+                          "style": Object {
+                            "borderRadius": 6,
+                            "height": 20,
+                            "marginBottom": 10,
+                            "marginLeft": 5,
+                            "padding": 5,
+                          },
+                          "type": "text",
+                        },
+                        "memoizedState": null,
+                        "nextEffect": null,
+                        "pendingProps": null,
+                        "ref": null,
+                        "return": [Circular],
+                        "sibling": FiberNode {
+                          "_debugID": 42,
+                          "_debugIsCurrentlyTiming": false,
+                          "_debugOwner": [Circular],
+                          "_debugSource": Object {
+                            "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                            "lineNumber": 179,
+                          },
+                          "alternate": null,
+                          "child": null,
+                          "effectTag": 0,
+                          "expirationTime": 0,
+                          "firstEffect": null,
+                          "index": 2,
+                          "internalContextTag": 0,
+                          "key": null,
+                          "lastEffect": null,
+                          "memoizedProps": Object {},
+                          "memoizedState": null,
+                          "nextEffect": null,
+                          "pendingProps": null,
+                          "ref": null,
+                          "return": [Circular],
+                          "sibling": FiberNode {
+                            "_debugID": 43,
+                            "_debugIsCurrentlyTiming": false,
+                            "_debugOwner": [Circular],
+                            "_debugSource": Object {
+                              "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                              "lineNumber": 180,
+                            },
+                            "alternate": null,
+                            "child": null,
+                            "effectTag": 0,
+                            "expirationTime": 0,
+                            "firstEffect": null,
+                            "index": 3,
+                            "internalContextTag": 0,
+                            "key": null,
+                            "lastEffect": null,
+                            "memoizedProps": Object {
+                              "children": "Password",
+                            },
+                            "memoizedState": null,
+                            "nextEffect": null,
+                            "pendingProps": null,
+                            "ref": null,
+                            "return": [Circular],
+                            "sibling": FiberNode {
+                              "_debugID": 44,
+                              "_debugIsCurrentlyTiming": false,
+                              "_debugOwner": [Circular],
+                              "_debugSource": Object {
+                                "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                                "lineNumber": 181,
+                              },
+                              "alternate": null,
+                              "child": null,
+                              "effectTag": 0,
+                              "expirationTime": 0,
+                              "firstEffect": null,
+                              "index": 4,
+                              "internalContextTag": 0,
+                              "key": "password",
+                              "lastEffect": null,
+                              "memoizedProps": Object {
+                                "name": "password",
+                                "onChange": [Function],
+                                "style": Object {
+                                  "borderRadius": 6,
+                                  "height": 20,
+                                  "marginBottom": 10,
+                                  "marginLeft": 5,
+                                  "padding": 5,
+                                },
+                                "type": "password",
+                              },
+                              "memoizedState": null,
+                              "nextEffect": null,
+                              "pendingProps": null,
+                              "ref": null,
+                              "return": [Circular],
+                              "sibling": null,
+                              "stateNode": <input
+                                type="password"
+                                style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                name="password"
+/>,
+                              "tag": 5,
+                              "type": "input",
+                              "updateQueue": null,
+                            },
+                            "stateNode": <label>
+                              Password
+</label>,
+                            "tag": 5,
+                            "type": "label",
+                            "updateQueue": null,
+                          },
+                          "stateNode": <br />,
+                          "tag": 5,
+                          "type": "br",
+                          "updateQueue": null,
+                        },
+                        "stateNode": <input
+                          type="text"
+                          style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                          name="username"
+/>,
+                        "tag": 5,
+                        "type": "input",
+                        "updateQueue": null,
+                      },
+                      "stateNode": <label>
+                        Username
+</label>,
+                      "tag": 5,
+                      "type": "label",
+                      "updateQueue": null,
+                    },
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 1,
+                    "internalContextTag": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": Array [
+                        <label>
+                          Username
+</label>,
+                        <input
+                          name="username"
+                          onChange={[Function]}
+                          style={
+                                                    Object {
+                                                                              "borderRadius": 6,
+                                                                              "height": 20,
+                                                                              "marginBottom": 10,
+                                                                              "marginLeft": 5,
+                                                                              "padding": 5,
+                                                                            }
+                          }
+                          type="text"
+/>,
+                        <br />,
+                        <label>
+                          Password
+</label>,
+                        <input
+                          name="password"
+                          onChange={[Function]}
+                          style={
+                                                    Object {
+                                                                              "borderRadius": 6,
+                                                                              "height": 20,
+                                                                              "marginBottom": 10,
+                                                                              "marginLeft": 5,
+                                                                              "padding": 5,
+                                                                            }
+                          }
+                          type="password"
+/>,
+                      ],
+                      "className": "loginForm",
+                      "onSubmit": [Function],
+                    },
+                    "memoizedState": null,
+                    "nextEffect": null,
+                    "pendingProps": null,
+                    "ref": null,
+                    "return": [Circular],
+                    "sibling": FiberNode {
+                      "_debugID": 39,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": Object {
+                        "fileName": "/Users/eliasmikkola/coding/mooc2018/bloglist-frontend/src/App.js",
+                        "lineNumber": 188,
+                      },
+                      "alternate": null,
+                      "child": null,
+                      "effectTag": 0,
+                      "expirationTime": 0,
+                      "firstEffect": null,
+                      "index": 2,
+                      "internalContextTag": 0,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "children": "Login",
+                        "onClick": [Function],
+                      },
+                      "memoizedState": null,
+                      "nextEffect": null,
+                      "pendingProps": null,
+                      "ref": null,
+                      "return": [Circular],
+                      "sibling": null,
+                      "stateNode": <button>
+                        Login
+</button>,
+                      "tag": 5,
+                      "type": "button",
+                      "updateQueue": null,
+                    },
+                    "stateNode": <form
+                      class="loginForm"
+>
+                      <label>
+                                            Username
+                      </label>
+                      <input
+                                            type="text"
+                                            style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                            name="username"
+                      />
+                      <br />
+                      <label>
+                                            Password
+                      </label>
+                      <input
+                                            type="password"
+                                            style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                            name="password"
+                      />
+</form>,
+                    "tag": 5,
+                    "type": "form",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <h2>
+                    Kirjaudu sovellukseen
+</h2>,
+                  "tag": 5,
+                  "type": "h2",
+                  "updateQueue": null,
+                },
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 1,
+                "internalContextTag": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": Array [
+                    <h2>
+                      Kirjaudu sovellukseen
+</h2>,
+                    <form
+                      className="loginForm"
+                      onSubmit={[Function]}
+>
+                      <label>
+                                            Username
+                      </label>
+                      <input
+                                            name="username"
+                                            onChange={[Function]}
+                                            style={
+                                                                  Object {
+                                                                                        "borderRadius": 6,
+                                                                                        "height": 20,
+                                                                                        "marginBottom": 10,
+                                                                                        "marginLeft": 5,
+                                                                                        "padding": 5,
+                                                                                      }
+                                            }
+                                            type="text"
+                      />
+                      <br />
+                      <label>
+                                            Password
+                      </label>
+                      <input
+                                            name="password"
+                                            onChange={[Function]}
+                                            style={
+                                                                  Object {
+                                                                                        "borderRadius": 6,
+                                                                                        "height": 20,
+                                                                                        "marginBottom": 10,
+                                                                                        "marginLeft": 5,
+                                                                                        "padding": 5,
+                                                                                      }
+                                            }
+                                            type="password"
+                      />
+</form>,
+                    <button
+                      onClick={[Function]}
+>
+                      Login
+</button>,
+                  ],
+                },
+                "memoizedState": null,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": [Circular],
+                "sibling": null,
+                "stateNode": <div>
+                  <h2>
+                                    Kirjaudu sovellukseen
+                  </h2>
+                  <form
+                                    class="loginForm"
+                  >
+                                    <label>
+                                                      Username
+                                    </label>
+                                    <input
+                                                      type="text"
+                                                      style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                      name="username"
+                                    />
+                                    <br />
+                                    <label>
+                                                      Password
+                                    </label>
+                                    <input
+                                                      type="password"
+                                                      style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                      name="password"
+                                    />
+                  </form>
+                  <button>
+                                    Login
+                  </button>
+</div>,
+                "tag": 5,
+                "type": "div",
+                "updateQueue": null,
+              },
+              "stateNode": ,
+              "tag": 6,
+              "type": null,
+              "updateQueue": null,
+            },
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": Array [
+                "",
+                <div>
+                  <h2>
+                                    Kirjaudu sovellukseen
+                  </h2>
+                  <form
+                                    className="loginForm"
+                                    onSubmit={[Function]}
+                  >
+                                    <label>
+                                                      Username
+                                    </label>
+                                    <input
+                                                      name="username"
+                                                      onChange={[Function]}
+                                                      style={
+                                                                        Object {
+                                                                                          "borderRadius": 6,
+                                                                                          "height": 20,
+                                                                                          "marginBottom": 10,
+                                                                                          "marginLeft": 5,
+                                                                                          "padding": 5,
+                                                                                        }
+                                                      }
+                                                      type="text"
+                                    />
+                                    <br />
+                                    <label>
+                                                      Password
+                                    </label>
+                                    <input
+                                                      name="password"
+                                                      onChange={[Function]}
+                                                      style={
+                                                                        Object {
+                                                                                          "borderRadius": 6,
+                                                                                          "height": 20,
+                                                                                          "marginBottom": 10,
+                                                                                          "marginLeft": 5,
+                                                                                          "padding": 5,
+                                                                                        }
+                                                      }
+                                                      type="password"
+                                    />
+                  </form>
+                  <button
+                                    onClick={[Function]}
+                  >
+                                    Login
+                  </button>
+</div>,
+              ],
+            },
+            "memoizedState": null,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": [Circular],
+            "sibling": null,
+            "stateNode": <div>
+              <div>
+                            <h2>
+                                          Kirjaudu sovellukseen
+                            </h2>
+                            <form
+                                          class="loginForm"
+                            >
+                                          <label>
+                                                        Username
+                                          </label>
+                                          <input
+                                                        type="text"
+                                                        style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                        name="username"
+                                          />
+                                          <br />
+                                          <label>
+                                                        Password
+                                          </label>
+                                          <input
+                                                        type="password"
+                                                        style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                        name="password"
+                                          />
+                            </form>
+                            <button>
+                                          Login
+                            </button>
+              </div>
+</div>,
+            "tag": 5,
+            "type": "div",
+            "updateQueue": null,
+          },
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "internalContextTag": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {},
+          "memoizedState": Object {
+            "blogs": Array [],
+            "message": null,
+            "password": "",
+            "user": null,
+            "username": "",
+          },
+          "nextEffect": null,
+          "pendingProps": null,
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 32,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": null,
+            "child": [Circular],
+            "effectTag": 1,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 30,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": FiberNode {
+                "_debugID": 30,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "alternate": [Circular],
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 1,
+                "firstEffect": null,
+                "index": 0,
+                "internalContextTag": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div>
+                                        <div>
+                                                            <h2>
+                                                                                Kirjaudu sovellukseen
+                                                            </h2>
+                                                            <form
+                                                                                class="loginForm"
+                                                            >
+                                                                                <label>
+                                                                                                    Username
+                                                                                </label>
+                                                                                <input
+                                                                                                    type="text"
+                                                                                                    style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                                    name="username"
+                                                                                />
+                                                                                <br />
+                                                                                <label>
+                                                                                                    Password
+                                                                                </label>
+                                                                                <input
+                                                                                                    type="password"
+                                                                                                    style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                                    name="password"
+                                                                                />
+                                                            </form>
+                                                            <button>
+                                                                                Login
+                                                            </button>
+                                        </div>
+                    </div>
+</div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "finishedWork": null,
+                  "hydrate": false,
+                  "isReadyForCommit": false,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingContext": null,
+                  "remainingExpirationTime": 0,
+                },
+                "tag": 3,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "callbackList": null,
+                  "expirationTime": 1,
+                  "first": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "nextCallback": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+/>,
+                    },
+                  },
+                  "hasForceUpdate": false,
+                  "isInitialized": false,
+                  "isProcessing": false,
+                  "last": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "nextCallback": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+/>,
+                    },
+                  },
+                },
+              },
+              "child": [Circular],
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": [Circular],
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+/>,
+              },
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div>
+                                    <div>
+                                                      <h2>
+                                                                        Kirjaudu sovellukseen
+                                                      </h2>
+                                                      <form
+                                                                        class="loginForm"
+                                                      >
+                                                                        <label>
+                                                                                          Username
+                                                                        </label>
+                                                                        <input
+                                                                                          type="text"
+                                                                                          style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                          name="username"
+                                                                        />
+                                                                        <br />
+                                                                        <label>
+                                                                                          Password
+                                                                        </label>
+                                                                        <input
+                                                                                          type="password"
+                                                                                          style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                                                                          name="password"
+                                                                        />
+                                                      </form>
+                                                      <button>
+                                                                        Login
+                                                      </button>
+                                    </div>
+                  </div>
+</div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "hydrate": false,
+                "isReadyForCommit": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": null,
+            },
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {},
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {},
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 2,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "sibling": null,
+          "stateNode": [Circular],
+          "tag": 2,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_reactInternalInstance": Object {},
+        "context": Object {},
+        "deleteBlog": [Function],
+        "inputStyle": Object {
+          "borderRadius": 6,
+          "height": 20,
+          "marginBottom": 10,
+          "marginLeft": 5,
+          "padding": 5,
+        },
+        "likeBlog": [Function],
+        "login": [Function],
+        "logout": [Function],
+        "onFieldChange": [Function],
+        "postBlog": [Function],
+        "props": Object {},
+        "refs": Object {},
+        "state": Object {
+          "blogs": Array [],
+          "message": null,
+          "password": "",
+          "user": null,
+          "username": "",
+        },
+        "updater": Object {
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+        },
+      },
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {},
+      "ref": null,
+      "rendered": Object {
+        "instance": <div>
+          <div>
+                    <h2>
+                              Kirjaudu sovellukseen
+                    </h2>
+                    <form
+                              class="loginForm"
+                    >
+                              <label>
+                                        Username
+                              </label>
+                              <input
+                                        type="text"
+                                        style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                        name="username"
+                              />
+                              <br />
+                              <label>
+                                        Password
+                              </label>
+                              <input
+                                        type="password"
+                                        style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                        name="password"
+                              />
+                    </form>
+                    <button>
+                              Login
+                    </button>
+          </div>
+</div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "",
+            <div>
+              <h2>
+                            Kirjaudu sovellukseen
+              </h2>
+              <form
+                            className="loginForm"
+                            onSubmit={[Function]}
+              >
+                            <label>
+                                          Username
+                            </label>
+                            <input
+                                          name="username"
+                                          onChange={[Function]}
+                                          style={
+                                                        Object {
+                                                                      "borderRadius": 6,
+                                                                      "height": 20,
+                                                                      "marginBottom": 10,
+                                                                      "marginLeft": 5,
+                                                                      "padding": 5,
+                                                                    }
+                                          }
+                                          type="text"
+                            />
+                            <br />
+                            <label>
+                                          Password
+                            </label>
+                            <input
+                                          name="password"
+                                          onChange={[Function]}
+                                          style={
+                                                        Object {
+                                                                      "borderRadius": 6,
+                                                                      "height": 20,
+                                                                      "marginBottom": 10,
+                                                                      "marginLeft": 5,
+                                                                      "padding": 5,
+                                                                    }
+                                          }
+                                          type="password"
+                            />
+              </form>
+              <button
+                            onClick={[Function]}
+              >
+                            Login
+              </button>
+</div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "",
+          Object {
+            "instance": <div>
+              <h2>
+                            Kirjaudu sovellukseen
+              </h2>
+              <form
+                            class="loginForm"
+              >
+                            <label>
+                                          Username
+                            </label>
+                            <input
+                                          type="text"
+                                          style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                          name="username"
+                            />
+                            <br />
+                            <label>
+                                          Password
+                            </label>
+                            <input
+                                          type="password"
+                                          style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                          name="password"
+                            />
+              </form>
+              <button>
+                            Login
+              </button>
+</div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Kirjaudu sovellukseen
+</h2>,
+                <form
+                  className="loginForm"
+                  onSubmit={[Function]}
+>
+                  <label>
+                                    Username
+                  </label>
+                  <input
+                                    name="username"
+                                    onChange={[Function]}
+                                    style={
+                                                      Object {
+                                                                        "borderRadius": 6,
+                                                                        "height": 20,
+                                                                        "marginBottom": 10,
+                                                                        "marginLeft": 5,
+                                                                        "padding": 5,
+                                                                      }
+                                    }
+                                    type="text"
+                  />
+                  <br />
+                  <label>
+                                    Password
+                  </label>
+                  <input
+                                    name="password"
+                                    onChange={[Function]}
+                                    style={
+                                                      Object {
+                                                                        "borderRadius": 6,
+                                                                        "height": 20,
+                                                                        "marginBottom": 10,
+                                                                        "marginLeft": 5,
+                                                                        "padding": 5,
+                                                                      }
+                                    }
+                                    type="password"
+                  />
+</form>,
+                <button
+                  onClick={[Function]}
+>
+                  Login
+</button>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <h2>
+                  Kirjaudu sovellukseen
+</h2>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Kirjaudu sovellukseen",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Kirjaudu sovellukseen",
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": <form
+                  class="loginForm"
+>
+                  <label>
+                                    Username
+                  </label>
+                  <input
+                                    type="text"
+                                    style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                    name="username"
+                  />
+                  <br />
+                  <label>
+                                    Password
+                  </label>
+                  <input
+                                    type="password"
+                                    style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                                    name="password"
+                  />
+</form>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <label>
+                      Username
+</label>,
+                    <input
+                      name="username"
+                      onChange={[Function]}
+                      style={
+                                            Object {
+                                                                  "borderRadius": 6,
+                                                                  "height": 20,
+                                                                  "marginBottom": 10,
+                                                                  "marginLeft": 5,
+                                                                  "padding": 5,
+                                                                }
+                      }
+                      type="text"
+/>,
+                    <br />,
+                    <label>
+                      Password
+</label>,
+                    <input
+                      name="password"
+                      onChange={[Function]}
+                      style={
+                                            Object {
+                                                                  "borderRadius": 6,
+                                                                  "height": 20,
+                                                                  "marginBottom": 10,
+                                                                  "marginLeft": 5,
+                                                                  "padding": 5,
+                                                                }
+                      }
+                      type="password"
+/>,
+                  ],
+                  "className": "loginForm",
+                  "onSubmit": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <label>
+                      Username
+</label>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Username",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Username",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": <input
+                      type="text"
+                      style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                      name="username"
+/>,
+                    "key": "username",
+                    "nodeType": "host",
+                    "props": Object {
+                      "name": "username",
+                      "onChange": [Function],
+                      "style": Object {
+                        "borderRadius": 6,
+                        "height": 20,
+                        "marginBottom": 10,
+                        "marginLeft": 5,
+                        "padding": 5,
+                      },
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": <br />,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": <label>
+                      Password
+</label>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Password",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Password",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": <input
+                      type="password"
+                      style="border-radius: 6px; height: 20px; padding: 5px; margin-bottom: 10px; margin-left: 5px;"
+                      name="password"
+/>,
+                    "key": "password",
+                    "nodeType": "host",
+                    "props": Object {
+                      "name": "password",
+                      "onChange": [Function],
+                      "style": Object {
+                        "borderRadius": 6,
+                        "height": 20,
+                        "marginBottom": 10,
+                        "marginLeft": 5,
+                        "padding": 5,
+                      },
+                      "type": "password",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "input",
+                  },
+                ],
+                "type": "form",
+              },
+              Object {
+                "instance": <button>
+                  Login
+</button>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Login",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Login",
+                ],
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

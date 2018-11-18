@@ -1,6 +1,8 @@
 import React from 'react'
-import Blog from './components/blogs/Blog'
+import BlogList from './components/blogs/BlogList'
+import UserList from './components/blogs/UserList'
 import BlogForm from './components/blogs/BlogForm'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import User from './components/User'
 import Alert from './components/Alert'
@@ -20,22 +22,31 @@ class App extends React.Component {
       username: '',
       password: '',
       user: null,
-      message: null
+      message: null,
+      users: []
     }
   }
 
   componentWillMount() {
     blogService.getAll().then(blogs => {
       console.log("BLOGS");
-      
+      console.log("here", Date.now());
+      userService.getAll().then(users => {
+        this.setState({
+          users
+        })
+      })
       const loggedUserJSON = window.localStorage.getItem('loggedUser')
       if (loggedUserJSON) {
-        console.log("INSIDE")
         const user = JSON.parse(loggedUserJSON)
         this.setState({
           user:user,
-          blogs:blogs})
+          blogs:blogs
+        }, () => {
+            console.log("here", Date.now());
+          })
         blogService.setToken(user.token)
+        
       }
       
     }).catch (e => {
@@ -144,6 +155,7 @@ class App extends React.Component {
   }
 
   
+  
 
   
   inputStyle = {
@@ -161,56 +173,64 @@ class App extends React.Component {
     return (
       
       <div>
+        
+
         { 
           this.state.message !== null ? <Alert alert={this.state.message}/> :'' 
         }
-        {
-          this.state.user === null ?
-             (  <div>
-
-                <h2>Kirjaudu sovellukseen</h2>
-                <form className="loginForm" onSubmit={this.login}>
-                  <label >Username</label>
-                  <input style={this.inputStyle}
-                    key="username"
-                    name="username"
-                    type="text"
-                    onChange={this.onFieldChange}
-                  /><br/>
-                  <label>Password</label>
-                  <input style={this.inputStyle}
-                    key="password"
-                    onChange={this.onFieldChange}
-                    name="password"
-                    type="password"
-                  />
-                </form>
-                <button onClick={this.login}>Login</button>
-                </div>
-            ) :
-          (<div>
-            <h2>blogs</h2>
-            <div key='userdiv'>
-              <User user={this.state.user}/>
-              <button 
-                key='logout' 
-                onClick={this.logout}>LOGOUT
-              </button>
-            </div>
-            <BlogForm postBlog={this.postBlog} inputStyle={this.inputStyle}/>
-              <div style={{
-                  marginTop: 30
-              }}>
-                {
-                  this.state.blogs.sort((a,b) => b.likes - a.likes).map(blog =>
-                    <Blog likeBlog={() => this.likeBlog(blog)} deleteBlog={() => this.deleteBlog(blog)} key={blog.id} blog={blog} user={this.state.user}/>
-                  )
-                }
-            </div>
+        <Router>
+          <div>
+          <div>
+              <Link to="/">home</Link> &nbsp;
+              <Link to="/users">users</Link>
           </div>
-         )
-        }
+          <Route exact path="/" render={() => {
+            return this.state.user === null ?
+            (  <div>
+
+                  <h2>Kirjaudu sovellukseen</h2>
+                  <form className="loginForm" onSubmit={this.login}>
+                    <label >Username</label>
+                    <input style={this.inputStyle}
+                      key="username"
+                      name="username"
+                      type="text"
+                      onChange={this.onFieldChange}
+                      /><br/>
+                    <label>Password</label>
+                    <input style={this.inputStyle}
+                      key="password"
+                      onChange={this.onFieldChange}
+                      name="password"
+                      type="password"
+                      />
+                  </form>
+                  <button onClick={this.login}>Login</button>
+                  </div>
+              ) :
+              (<div>
+              <h2>blogs</h2>
+              <div key='userdiv'>
+                <User user={this.state.user}/>
+                <button 
+                  key='logout' 
+                  onClick={this.logout}>LOGOUT
+                </button>
+              </div>
+              <BlogForm postBlog={this.postBlog} inputStyle={this.inputStyle}/>
+                <div style={{
+                  marginTop: 30
+                }}>
+                <BlogList deleteBlog={this.deleteBlog} likeBlog={this.likeBlog} user={this.state.user} blogs={this.state.blogs} />
+              </div>
+            </div>
+          )
+          }} />
+          <Route path="/users" render={() => <UserList users={this.state.users}/>} />
+        </div>
+      </Router>  
       </div>
+
     )
   }
 }
