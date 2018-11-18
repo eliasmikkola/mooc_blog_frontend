@@ -174,15 +174,6 @@ class Wrapper extends React.Component {
   
 
   
-  inputStyle = {
-    borderRadius: 6,
-    height: 20,
-    padding: 5,
-    marginBottom: 10,
-    marginLeft: 5
-
-  }
-  
   
 
   render() {
@@ -190,19 +181,22 @@ class Wrapper extends React.Component {
         
 
         <Router>
-          <div>
+          <div class="container">
           { 
           this.state.message !== null ? <Alert alert={this.state.message}/> :'' 
         }
             { this.state.user !== null ?
-            <div>
-              <Link to="/">blogs</Link> &nbsp;
-              <Link to="/users">users</Link>
-              <LoggedInUser user={this.state.user}/>
-              <button 
-                key='logout' 
-                onClick={this.logout}>LOGOUT
-              </button>
+            <div class="tabs">
+              <Link activeClassName="is-active"   to="/">blogs</Link> &nbsp;
+              <Link activeClassName="is-active"   to="/users">users</Link>
+              <div class="navbar-end">
+                <LoggedInUser user={this.state.user}/>
+                <button class="button is-warning"
+                  key='logout' 
+                  onClick={this.logout}>LOGOUT
+                </button>
+              </div>
+              
             </div> : ''
 
             }
@@ -210,30 +204,30 @@ class Wrapper extends React.Component {
             return this.state.user === null ?
             (  <div>
 
-                  <h2>Kirjaudu sovellukseen</h2>
-                  <form className="loginForm" onSubmit={this.login}>
-                    <label >Username</label>
-                    <input style={this.inputStyle}
+                  <h2 class="title">Kirjaudu sovellukseen</h2>
+                  <form class="form" onSubmit={this.login}>
+                    <label class="label">Username</label>
+                    <input class="input"
                       key="username"
                       name="username"
                       type="text"
                       onChange={this.onFieldChange}
                       /><br/>
-                    <label>Password</label>
-                    <input style={this.inputStyle}
+                    <label class="label">Password</label>
+                    <input class="input"
                       key="password"
                       onChange={this.onFieldChange}
                       name="password"
                       type="password"
                       />
                   </form>
-                  <button onClick={this.login}>Login</button>
+                  <button class="button is-primary" onClick={this.login}>Login</button>
                   </div>
               ) :
               (<div>
               
-              <h2>blogs</h2>
-              <BlogForm postBlog={this.postBlog} inputStyle={this.inputStyle}/>
+              <h2 class="title">blogs</h2>
+              <BlogForm postBlog={this.postBlog} />
                 <div style={{
                   marginTop: 30
                 }}>

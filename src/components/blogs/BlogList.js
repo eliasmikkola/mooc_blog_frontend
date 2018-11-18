@@ -11,7 +11,7 @@ render () {
     console.log("BLOG in list", this.props.blogs)
     return (
       
-      <div>
+      <div class="panel">
         {
             this.props.blogs.sort((a,b) => b.likes - a.likes).map(blog =>
             <Blog likeBlog={() => this.props.likeBlog(blog)} deleteBlog={() => this.props.deleteBlog(blog)} key={blog.id} blog={blog} user={this.props.user} extended={false}/>

@@ -4,8 +4,8 @@ const UserDetails = ({user}) => (
     {
         user ? 
         <div>
-            <h1>{user.name}</h1>
-            <h2>Added blogs</h2>
+            <h1 class="title">{user.name}</h1>
+            <h2 class="subtitle">Added blogs</h2>
             <ul>
                 {
                     user.blogs.length > 0 ? 

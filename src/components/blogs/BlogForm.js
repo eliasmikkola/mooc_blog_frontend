@@ -32,32 +32,44 @@ class BlogForm extends React.Component {
       }
     render() {
         return (
-            <div>
-            <h2>create new</h2>
-            <form >
-                <label >title</label>
-                <input style={this.props.inputStyle}
-                    key="title"
-                    name="title"
-                    type="text"
-                    onChange={this.onFieldChange}
-                /><br/>
-                <label>author</label>
-                <input style={this.props.inputStyle}
-                    key="author"
-                    onChange={this.onFieldChange}
-                    name="author"
-                    type="text"
-                /><br/>
-                <label>url</label>
-                <input style={this.props.inputStyle}
-                    key="url"
-                    onChange={this.onFieldChange}
-                    name="url"
-                    type="text"
-                />
+            <div class="container">
+            <h2 class="subtitle">Add new blog</h2>
+            <form class="form">
+                <div class="field">
+                    <a class="label" >title</a>    
+                        <input class="input" 
+                            key="title"
+                            name="title"
+                            type="text"
+                            onChange={this.onFieldChange}
+                            />
+                    </div>
+                
+                            
+                <div class="field">
+                    <a class="label">author</a>
+
+                        <input class="input" 
+                            key="author"
+                            onChange={this.onFieldChange}
+                            name="author"
+                            type="text"
+                            />
+                            
+                </div>
+                <div class="field">
+                    <a class="label">url</a>
+
+                    <input class="input" 
+                        key="url"
+                        onChange={this.onFieldChange}
+                        name="url"
+                        type="text"
+                        />
+                        
+                </div>
             </form>
-            <button onClick={this.postBlog}>Create</button>
+            <button class="button is-success" onClick={this.postBlog}>Create</button>
             </div>
         )
     }

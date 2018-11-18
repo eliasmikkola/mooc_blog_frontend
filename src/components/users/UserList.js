@@ -11,8 +11,8 @@ class UserList extends React.Component {
 render () {
     return (
       <div>
-        <table>
-            <thead>
+        <table class="table  is-bordered">
+            <thead class="thead">
                 <tr>
                     <td >Name</td>
                     <td >Blogs added</td>

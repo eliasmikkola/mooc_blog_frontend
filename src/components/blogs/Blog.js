@@ -20,18 +20,12 @@ class Blog extends React.Component {
     this.props.deleteBlog()
   }
 
- style = {
-  border: '1px solid black',
-  padding: 2,
-  marginTop: 5,
-}
+ 
 
 render () {
     return (
       this.props.extended ? 
-      <div 
-        className='extendedDiv'
-        style={this.style} >
+      <div class="panel-block">
         
         {this.props.blog.title}  |   by:{this.props.blog.author}
         <br/><a aref={this.props.blog.url}>{this.props.blog.url}</a>
@@ -46,9 +40,7 @@ render () {
         }
       </div> 
       :
-      <div 
-        className='compactDiv'
-        style={this.style} >
+      <div class="panel-block" >
           <Link to={`/blogs/${this.props.blog.id}`}>{this.props.blog.title}  |   by:{this.props.blog.author}</Link>
       </div> 
     )
