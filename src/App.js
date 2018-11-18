@@ -1,11 +1,12 @@
 import React from 'react'
 import BlogList from './components/blogs/BlogList'
-import UserList from './components/blogs/UserList'
+import UserList from './components/users/UserList'
 import BlogForm from './components/blogs/BlogForm'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-
-import User from './components/User'
+import LoggedInUser from './components/users/User'
+import UserDetails from './components/users/UserDetails'
 import Alert from './components/Alert'
+
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import blogService from './services/blogs'
 import loginService from './services/login'
@@ -29,8 +30,10 @@ class App extends React.Component {
 
   componentWillMount() {
     blogService.getAll().then(blogs => {
-      console.log("BLOGS");
-      console.log("here", Date.now());
+      this.setState({
+        blogs:blogs
+      })
+      
       userService.getAll().then(users => {
         this.setState({
           users
@@ -153,6 +156,13 @@ class App extends React.Component {
       })
     }
   }
+  userById = (id) => {
+    console.log(id, this.state.users);
+    if(this.state.users.length === 0){
+      return userService.getUser(id).then(u => u)
+    }
+    else return this.state.users.find(n => n.id === id)
+  }
 
   
   
@@ -166,7 +176,8 @@ class App extends React.Component {
     marginLeft: 5
 
   }
-
+  
+  
 
   render() {
     console.log("IN RENDER", this.state);
@@ -211,7 +222,7 @@ class App extends React.Component {
               (<div>
               <h2>blogs</h2>
               <div key='userdiv'>
-                <User user={this.state.user}/>
+                <LoggedInUser user={this.state.user}/>
                 <button 
                   key='logout' 
                   onClick={this.logout}>LOGOUT
@@ -226,7 +237,13 @@ class App extends React.Component {
             </div>
           )
           }} />
-          <Route path="/users" render={() => <UserList users={this.state.users}/>} />
+          <Route exact path="/users" render={() => <UserList users={this.state.users}/>} />
+          {this.state.users.length > 0 ? 
+            <Route exact path="/users/:id" render={({match}) =>
+            <UserDetails user={this.userById(match.params.id)} />}
+          /> : ''
+          }
+          
         </div>
       </Router>  
       </div>
