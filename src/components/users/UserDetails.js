@@ -8,7 +8,7 @@ const UserDetails = ({user}) => (
             <h2>Added blogs</h2>
             <ul>
                 {
-                    user.blogs.length === 0 ? 
+                    user.blogs.length > 0 ? 
                     (
                         user.blogs.map(blog => (
                             <li>
