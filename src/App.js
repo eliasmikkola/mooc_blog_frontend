@@ -19,6 +19,7 @@ class Wrapper extends React.Component {
   constructor(props) {
     super(props)
     this.postBlog = this.postBlog.bind(this);
+    this.postComment = this.postComment.bind(this);
     this.likeBlog = this.likeBlog.bind(this);
     this.deleteBlog = this.deleteBlog.bind(this);
     this.state = {
@@ -97,6 +98,7 @@ class Wrapper extends React.Component {
     })
   }
 
+  
   postBlog = (data) => {
     
     blogService.create(data).then((result) => {
@@ -118,10 +120,28 @@ class Wrapper extends React.Component {
       console.log("ERRR");
     });
   }
-
+  postComment = (data) => {
+    
+    blogService.createComment(data.id, data).then((result) => {
+      this.setState(prevState => ({
+        blogs: [...prevState.blogs.map(n => n.id === result.id ? result: n)],
+        message: {
+          title: `a new comment '${data.comment}' added`,
+          severity: 'success'
+        }
+      }))
+    }).catch((err) => {
+      this.setState(prevState => ({
+        message: {
+          title: `failed to add comment`,
+          severity: 'warning'
+        }
+      }))
+      console.log("ERRR");
+    });
+  }
 
   likeBlog = (data) => {
-    console.log("LIKE", data);
     const updatedBlog = {
         likes: data.likes + 1,
         title: data.title,
@@ -129,11 +149,14 @@ class Wrapper extends React.Component {
         url: data.url,
         user: data.user['_id']
     }
-
+    
     blogService.update(data.id, updatedBlog).then((result) => {
       //set blogs
       this.setState(prevState => ({
-        blogs: prevState.blogs.map(n => n.id === result.id ? result : n),
+        blogs: prevState.blogs.map(n => {
+          
+         return  n.id === result.id ? {...result, user: n.user } : n
+        }),
         message: {
           title: `'${data.title}' liked`,
           severity: 'success'
@@ -159,6 +182,8 @@ class Wrapper extends React.Component {
       })
     }
   }
+  
+
   userById = (id) => {
     console.log(id, this.state.users);
     if(this.state.users.length === 0){
@@ -247,7 +272,8 @@ class Wrapper extends React.Component {
             const matchedBlog = this.blogById(match.params.id)
             console.log("BLOG", matchedBlog)
             return (
-                matchedBlog && this.state.user !== null ? <Blog blog={matchedBlog} likeBlog={() => this.likeBlog(matchedBlog)} deleteBlog={() => this.deleteBlog(matchedBlog)}  user={this.state.user} extended={true}/> 
+                matchedBlog && this.state.user !== null ? 
+                <Blog blog={matchedBlog} likeBlog={() => this.likeBlog(matchedBlog)} postComment={this.postComment} deleteBlog={() => this.deleteBlog(matchedBlog)}  user={this.state.user} extended={true}/> 
                 : <p>No blog found</p>
               )
             }
