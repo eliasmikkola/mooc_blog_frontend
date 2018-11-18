@@ -2,17 +2,20 @@ import React from 'react'
 import BlogList from './components/blogs/BlogList'
 import UserList from './components/users/UserList'
 import BlogForm from './components/blogs/BlogForm'
+import Blog from './components/blogs/Blog'
 import LoggedInUser from './components/users/User'
 import UserDetails from './components/users/UserDetails'
 import Alert from './components/Alert'
+import { createBrowserHistory } from 'history';
 
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+
+import { BrowserRouter as Router, Route, Link, withRouter } from 'react-router-dom'
 
 import blogService from './services/blogs'
 import loginService from './services/login'
 import userService from './services/users'
 
-class App extends React.Component {
+class Wrapper extends React.Component {
   constructor(props) {
     super(props)
     this.postBlog = this.postBlog.bind(this);
@@ -97,7 +100,6 @@ class App extends React.Component {
   postBlog = (data) => {
     
     blogService.create(data).then((result) => {
-      
       //set blogs
       this.setState(prevState => ({
         blogs: [...prevState.blogs, result],
@@ -151,6 +153,7 @@ class App extends React.Component {
             severity: 'success'
           }
         }))
+        
       }).catch((err) => {
         console.log("errr", err);
       })
@@ -162,6 +165,9 @@ class App extends React.Component {
       return userService.getUser(id).then(u => u)
     }
     else return this.state.users.find(n => n.id === id)
+  }
+  blogById = (id) => {
+     return this.state.blogs.find(n => n.id === id)
   }
 
   
@@ -180,21 +186,26 @@ class App extends React.Component {
   
 
   render() {
-    console.log("IN RENDER", this.state);
     return (
-      
-      <div>
         
 
-        { 
-          this.state.message !== null ? <Alert alert={this.state.message}/> :'' 
-        }
         <Router>
           <div>
-          <div>
-              <Link to="/">home</Link> &nbsp;
+          { 
+          this.state.message !== null ? <Alert alert={this.state.message}/> :'' 
+        }
+            { this.state.user !== null ?
+            <div>
+              <Link to="/">blogs</Link> &nbsp;
               <Link to="/users">users</Link>
-          </div>
+              <LoggedInUser user={this.state.user}/>
+              <button 
+                key='logout' 
+                onClick={this.logout}>LOGOUT
+              </button>
+            </div> : ''
+
+            }
           <Route exact path="/" render={() => {
             return this.state.user === null ?
             (  <div>
@@ -220,14 +231,8 @@ class App extends React.Component {
                   </div>
               ) :
               (<div>
+              
               <h2>blogs</h2>
-              <div key='userdiv'>
-                <LoggedInUser user={this.state.user}/>
-                <button 
-                  key='logout' 
-                  onClick={this.logout}>LOGOUT
-                </button>
-              </div>
               <BlogForm postBlog={this.postBlog} inputStyle={this.inputStyle}/>
                 <div style={{
                   marginTop: 30
@@ -240,16 +245,31 @@ class App extends React.Component {
           <Route exact path="/users" render={() => <UserList users={this.state.users}/>} />
           {this.state.users.length > 0 ? 
             <Route exact path="/users/:id" render={({match}) =>
-            <UserDetails user={this.userById(match.params.id)} />}
-          /> : ''
+              <UserDetails user={this.userById(match.params.id)} />}
+            /> : ''
           }
+          {this.state.blogs.length > 0 ? 
+          <Route exact path="/blogs/:id" render={({match}) => {
+            const matchedBlog = this.blogById(match.params.id)
+            console.log("BLOG", matchedBlog)
+            return (
+                matchedBlog ? <Blog blog={matchedBlog} extended={true} likeBlog={() => this.likeBlog(matchedBlog)} deleteBlog={() => this.deleteBlog(matchedBlog)}  user={this.state.user} extended={true}/> 
+                : <p>No blog found</p>
+              )
+            }
+          }
+          /> : ''
+        }
           
         </div>
-      </Router>  
-      </div>
+      </Router>
 
     )
   }
 }
+
+const App = () => (
+  <Wrapper></Wrapper>
+)
 
 export default App;

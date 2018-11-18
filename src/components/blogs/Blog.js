@@ -1,24 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Router, Route, Link } from 'react-router-dom'
 
 class Blog extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      extended: false
-    }
   }
  
-  toggleExtended = () => {
-    this.setState({extended: !this.state.extended})
-  }
+  
   likeBlog = (e) => {
     e.stopPropagation();
-
+    console.log("like blog");
     this.props.likeBlog()
   }
 
   deleteBlog = (e) => {
+    console.log("delete blog");
     e.stopPropagation();
     this.props.deleteBlog()
   }
@@ -31,11 +28,10 @@ class Blog extends React.Component {
 
 render () {
     return (
-      this.state.extended ? 
+      this.props.extended ? 
       <div 
         className='extendedDiv'
-        style={this.style} 
-        onClick={this.toggleExtended}>
+        style={this.style} >
         
         {this.props.blog.title}  |   by:{this.props.blog.author}
         <br/><a aref={this.props.blog.url}>{this.props.blog.url}</a>
@@ -52,9 +48,8 @@ render () {
       :
       <div 
         className='compactDiv'
-        style={this.style} 
-        onClick={this.toggleExtended}>
-        {this.props.blog.title}  |   by:{this.props.blog.author}
+        style={this.style} >
+          <Link to={`/blogs/${this.props.blog.id}`}>{this.props.blog.title}  |   by:{this.props.blog.author}</Link>
       </div> 
     )
   }
